@@ -6,7 +6,6 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-
 }
 
 @media (prefers-color-scheme: dark) {
@@ -25,14 +24,19 @@ h1 {
 
 body {
   color: rgb(var(--background-start-rgb));
+
   background: rgba(147, 171, 150, 0.434);
-  
 }
 
 input,
 select {
+
   background-color: rgba(107, 142, 111, 0.477);
   border: 2px solid rgba(29, 40, 30, 0.9);
+
+  background-color: rgba(89, 114, 91, 0.491);
+  border: 2px solid rgba(34, 49, 36, 0.9);
+
   border-radius: 10px;
   padding: 10px;
   margin: 5px;
@@ -44,17 +48,28 @@ color: rgb(1, 0, 1);
 }
 
 .submit-button {
+
   background-color:  rgba(54, 72, 56, 0.9);
+
+  background-color:  rgba(52, 71, 54, 0.9);
+
 
   border-radius: 10px;
   padding: 10px;
   margin-top: 10px;
   font-weight: bold;
 
+
 }
 
 .submit-button:hover {
   background-color: rgba(78, 104, 81, 0.9);
+
+}
+
+.submit-button:hover {
+  background-color:rgba(87, 115, 90, 0.9);
+
 
 }
 

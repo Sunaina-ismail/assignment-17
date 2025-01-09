@@ -19,8 +19,12 @@ function Form() {
   const onSubmit = async (data: FormData) => {
     try {
       const response = await axios.post("/api/form", data); 
+
       const { errors = {} } = response.data; 
-      
+    
+
+    
+
       const fieldErrorMapping: Record<string, ValidFieldNames> = {
         email: "email",
         githubUrl: "githubUrl",
@@ -33,8 +37,11 @@ function Form() {
         (field) => errors[field]
       );
 
+
+
       if (fieldWithError) {
-       
+        
+
         setError(fieldErrorMapping[fieldWithError], {
           type: "server",
           message: errors[fieldWithError],
